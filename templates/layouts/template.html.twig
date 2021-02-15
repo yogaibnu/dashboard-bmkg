@@ -34,9 +34,9 @@
 
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
     <div class="wrapper">
-        {% include('layout/navbar.html.twig') %}
+        {% include('layouts/navbar.html.twig') %}
 
-        {% include('layout/sidebar.html.twig') %}
+        {% include('layouts/sidebar.html.twig') %}
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -46,6 +46,7 @@
                     <div class="row mb-2">
                         <div class="col-sm-6">
                             <h1 class="m-0 text-dark">{% block title endblock %}</h1>
+                            {# <h1 class="m-0 text-dark">title</h1> #}
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
@@ -57,6 +58,7 @@
                     <div class="card">
                         <div class="card-body">
                           {% block body endblock %}
+                          {# body #}
                         </div>
                     </div>
                 </div>
@@ -64,7 +66,7 @@
             <!-- /.content -->
             <!-- /.content-wrapper -->
         
-        {% include('layout/footer.html.twig') %}
+        {% include('layouts/footer.html.twig') %}
         </div>
         <!-- ./wrapper -->
 
